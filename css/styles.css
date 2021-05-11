@@ -211,6 +211,10 @@ background: #F0F0F0;
 border-radius: 8px;
 text-align: center;
 margin: 5px;
+cursor: pointer;
+}
+.cs-grey-sub-cards:hover{
+    background-color: #D8D8D8;
 }
 .card-body{
     padding: 0%;
@@ -230,7 +234,11 @@ background-color: #2196F3;
     margin: 0px;
 }
 
-
+.jk-btn-back{
+    color: black;
+    margin: 5px 0px 0px 0px;
+    text-decoration: none;
+}
 
 
 
@@ -254,46 +262,27 @@ background-color: #2196F3;
 
 
 
+/* 
+.navbar-nav {
+    flex-direction: row;
 
-// Generate series of `.navbar-expand-*` responsive classes for configuring
-// where your navbar collapses.
-.navbar-expand {
-  @each $breakpoint in map-keys($grid-breakpoints) {
-    $next: breakpoint-next($breakpoint, $grid-breakpoints);
-    $infix: breakpoint-infix($next, $grid-breakpoints);
-
-    // stylelint-disable-next-line scss/selector-no-union-class-name
-    &#{$infix} {
-      @include media-breakpoint-up($next) {
-        flex-wrap: nowrap;
-        justify-content: flex-start;
-
-        .navbar-nav {
-          flex-direction: row;
-
-          .dropdown-menu {
-            position: absolute;
-          }
-
-          .nav-link {
-            padding-right: $navbar-nav-link-padding-x;
-            padding-left: $navbar-nav-link-padding-x;
-          }
-        }
-
-        .navbar-nav-scroll {
-          overflow: visible;
-        }
-
-        .navbar-collapse {
-          display: flex !important; // stylelint-disable-line declaration-no-important
-          flex-basis: auto;
-        }
-
-        .navbar-toggler {
-          display: none;
-        }
-      }
-    }
   }
-}
+  
+  .navbar-nav.dropdown-menu {
+    position: absolute;
+  }
+
+
+
+  .navbar-nav-scroll {
+    overflow: visible;
+  }
+
+  .navbar-collapse {
+    display: flex !important; 
+    flex-basis: auto;
+  }
+
+  .navbar-toggler {
+    display: none;
+  } */

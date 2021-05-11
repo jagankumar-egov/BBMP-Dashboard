@@ -27,3 +27,8 @@ const array=['jagan','bacac'];
 //     document.getElementById("cs-doctor-consultation").appendChild(cln);
 //   }
 //   myFunction()
+
+
+const func=()=>{
+    console.log("sasasasasasas")
+}
