@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+    <title>Covid Citizen Dashboard</title>
+    <meta name="description" content="Dashboard to show details of Bed Allocation">
+    <meta name="author" content="Jagan">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- nav bar contents -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light cs-navbar">
+        <div class="container-fluid">
+            <a class="cs-primary navbar-brand cs-header " href="#">Covid Citizen Dashboard</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <form class="d-flex cs-nav-bar-form">
+                    <span class="cs-nav-bar-form-elements">
+                        <!-- <select class="form-select cs-nav-bar-select" aria-label="Disabled select example" disabled>
+              <option selected>English</option>
+              <option value="1">Hindi</option>
+            </select>
+            <select class="form-select cs-nav-bar-select" aria-label="Default select example">
+              <option selected>Bangalore</option>
+              <option value="1">Chennai</option>
+              <option value="2">Delhi</option>
+            </select> -->
+                        <div class="col-md-3 cs-nav-bar-select">
+                            <label for="validationCustom04" class="form-label cs-navbar-label disabled">Language</label>
+                            <select class="form-select disabled"  disabled id="validationCustom04" required>
+                                <option selected>English</option>
+                                <option value="1">Hindi</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid Language.
+                            </div>
+                        </div>
+                        <div class="col-md-3 cs-nav-bar-select">
+                            <label for="validationCustom04" class="form-label cs-navbar-label">City</label>
+                            <select class="form-select" id="validationCustom04" required>
+                                <option selected>Bangalore</option>
+                                <option value="1">Chennai</option>
+                                <option value="2">Delhi</option>
+                            </select>
+                            <div class="invalid-feedback">
+                                Please select a valid City.
+                            </div>
+                        </div>
+                    </span>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- nav bar contents -->
+    <div class="cs-card-body">
+
+
+        <div class="card ">
+            <!-- router contents -->
+            <div class="card-header">
+                <ul class="nav nav-tabs card-header-tabs text-center">
+                    <li class="nav-item ">
+                        <a class="nav-link active" aria-current="true" href="#">Queue Status</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Bed Availability</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard 3</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- router contents -->
+
+
+
+            <div class="card-body">
+                <h4 class="cs-card-title">Bed Allocation Queue - General Bed <span class="cs-card-sub-title">last
+                        updated : 12/04/2021 12:50 PM</span></h4>
+
+
+
+                <!-- card 2 patient waiting for doctors contents -->
+                <div class="cs-white-cards" style="margin-top: 2%;">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">S.No</th>
+                                <th scope="col">Queue No.</th>
+                                <th scope="col">BU Number</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>121</td>
+                                <td>BU****2345</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>121</td>
+                                <td>BU****2345</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>121</td>
+                                <td>BU****2345</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>121</td>
+                                <td>BU****2345</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>121</td>
+                                <td>BU****2345</td>
+
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>121</td>
+                                <td>BU****2345</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th scope="col"></th>
+                                <th scope="col"></th>
+                                <th scope="col" style="float:right">Rows Per Page: 10 1 - 10 of 200</th>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </div>
+                <!-- card 2 patient waiting for doctors contents -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Scripts contents -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script>
+    <script src="js/scripts.js"></script>
+    <!-- Scripts contents -->
+</body>
+
+</html>
