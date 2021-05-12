@@ -26,6 +26,10 @@ body {
     font-weight: 600;
 }
 
+.cs-header>img {
+    height: 64px;
+}
+
 .cs-primary {
     color: #142FDE !important;
 }
@@ -146,36 +150,6 @@ body {
 }
 
 
-@media (max-width:991px) {
-    .cs-card-sub-title {
-        display: none;
-    }
-.table{
-    width: 100%;
-    overflow: auto;
-    display: block;
-}
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .cs-nav-bar-form-elements {
-        flex-direction: column-reverse;
-    }
-
-    .cs-nav-bar-select {
-        width: 100%;
-    }
-
-    .cs-card-body {
-        margin: 0%;
-    }
-
-    .cs-card1-form {
-        margin-top: 30px;
-    }
-
-    .cs-card-title {
-        margin-left: 20px;
-    }
-}
 
 .card-header:first-child {
     background-color: none;
@@ -310,7 +284,8 @@ body {
 .jk-alert-danger {
     background-color: #F44336;
 }
-.jk-alert-info{
+
+.jk-alert-info {
     background-color: #2196F3;
 }
 
@@ -347,7 +322,7 @@ body {
 
 .jk-halfcard {
     width: 50%;
-    padding: 10px ;
+    padding: 10px;
     margin: 5px;
 }
 
@@ -362,7 +337,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 5px;
-width: 30%;
+    width: 30%;
     border-radius: 8px;
     text-align: center;
     margin: 5px;
@@ -389,7 +364,7 @@ width: 30%;
     flex-direction: row;
 }
 
-.jk-bed-count-text-total{
+.jk-bed-count-text-total {
     color: #FF9800;
 
 }
@@ -406,19 +381,78 @@ width: 30%;
     color: #4CAF50;
 
 }
-.jk-bed-card-holder{
+
+.jk-bed-card-holder {
     display: flex;
 }
 
-.jk-text-align-center{
+.jk-text-align-center {
     text-align: center;
 }
-.jk-bed-table-form{
-margin: 0px;
+
+.jk-bed-table-form {
+    margin: 0px;
 }
-.jk-no-margin{
-margin: 0px;
+
+.jk-no-margin {
+    margin: 0px;
 }
-.jk-bed-table-padding{
+
+.jk-bed-table-padding {
     padding: 16px 24px 24px 24px;
+}
+
+
+
+
+@media (max-width:991px) {
+    .cs-card-sub-title {
+        display: none;
+    }
+
+    .table {
+        width: 100%;
+        overflow: auto;
+        display: block;
+    }
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .cs-nav-bar-form-elements {
+        flex-direction: column-reverse;
+    }
+
+    .cs-nav-bar-select {
+        width: 100%;
+    }
+
+    .cs-card-body {
+        margin: 0%;
+    }
+
+    .cs-card1-form {
+        margin-top: 30px;
+    }
+
+    .cs-card-title {
+        margin-left: 20px;
+    }
+
+    .cs-header {
+        font-size: 20px;
+        line-height: 26.13px;
+        font-weight: 600;
+    }
+
+    .cs-header>img {
+        height: 48px;
+    }
+
+    .jk-halfcard {
+        width: 94%;
+        margin: 3%;
+    }
+
+    .jk-bed-card-holder {
+        flex-direction: column;
+    }
 }
