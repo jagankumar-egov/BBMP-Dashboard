@@ -62,3 +62,8 @@ const array=['jagan','bacac'];
           window.location.href="BBMPBedAvailablity.html#";
       }));
         
+      document.querySelectorAll('.jk-bed-available').forEach(element=>element.addEventListener('click', function (event) {
+        // do something
+        console.log(event);
+        window.location.href='BBMPBedAvailabilitySelectedBed.html#';
+    }));
