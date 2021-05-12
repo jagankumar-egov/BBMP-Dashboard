@@ -456,3 +456,19 @@ body {
         flex-direction: column;
     }
 }
+
+@media (max-width:400px) {
+    .jk-nav-bar{
+        /* flex-wrap: nowrap!important; */
+    }
+    .jk-nav-bar>a{
+        margin-right: 0%;
+    }
+    .jk-nav-bar>button{
+        padding: .20rem .30rem;
+    }
+
+    .cs-grey-sub-cards{
+        width: 10em;
+    }
+}
