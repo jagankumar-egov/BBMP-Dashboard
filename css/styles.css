@@ -16,7 +16,10 @@ body {
     letter-spacing: 0.01071em;
     background-color: #F5F5FA;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  color:  rgba(0, 0, 0, 0.87)
 
+}
 .cs-header {
     font: Roboto;
     font-weight: 500;
@@ -24,6 +27,10 @@ body {
     font-size: 24px;
     line-height: 29.13px;
     font-weight: 600;
+}
+
+.cs-header>img {
+    height: 64px;
 }
 
 .cs-primary {
@@ -146,32 +153,6 @@ body {
 }
 
 
-@media (max-width:991px) {
-    .cs-card-sub-title {
-        display: none;
-    }
-
-    /* tablet, landscape iPad, lo-res laptops ands desktops */
-    .cs-nav-bar-form-elements {
-        flex-direction: column-reverse;
-    }
-
-    .cs-nav-bar-select {
-        width: 100%;
-    }
-
-    .cs-card-body {
-        margin: 0%;
-    }
-
-    .cs-card1-form {
-        margin-top: 30px;
-    }
-
-    .cs-card-title {
-        margin-left: 20px;
-    }
-}
 
 .card-header:first-child {
     background-color: none;
@@ -306,7 +287,8 @@ body {
 .jk-alert-danger {
     background-color: #F44336;
 }
-.jk-alert-info{
+
+.jk-alert-info {
     background-color: #2196F3;
 }
 
@@ -343,7 +325,7 @@ body {
 
 .jk-halfcard {
     width: 50%;
-    padding: 10px ;
+    padding: 10px;
     margin: 5px;
 }
 
@@ -358,7 +340,7 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 5px;
-width: 30%;
+    width: 30%;
     border-radius: 8px;
     text-align: center;
     margin: 5px;
@@ -385,7 +367,7 @@ width: 30%;
     flex-direction: row;
 }
 
-.jk-bed-count-text-total{
+.jk-bed-count-text-total {
     color: #FF9800;
 
 }
@@ -402,19 +384,151 @@ width: 30%;
     color: #4CAF50;
 
 }
-.jk-bed-card-holder{
+
+.jk-bed-card-holder {
     display: flex;
 }
 
-.jk-text-align-center{
+.jk-text-align-center {
     text-align: center;
 }
-.jk-bed-table-form{
-margin: 0px;
+
+.jk-text-align-right {
+    text-align: right;
 }
-.jk-no-margin{
-margin: 0px;
+
+.jk-bed-table-form {
+    margin: 0px;
 }
-.jk-bed-table-padding{
+
+.jk-no-margin {
+    margin: 0px;
+}
+
+.jk-bed-table-padding {
     padding: 16px 24px 24px 24px;
+}
+
+.jk-bed-current-status-success {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #4CAF50;
+}
+
+.jk-bed-current-status-error {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #F44336;
+
+}
+
+.jk-table-paginators {
+    float: right;
+}
+.jk-font-bold{
+    font-weight: 600;
+}
+.jk-dashboard-form{
+    margin-top: 15px;
+}
+@media (max-width:991px) {
+    .jk-bed-count-cards{
+height: 7em;
+    }
+    .jk-table-paginators {
+        white-space: nowrap;
+    }
+
+    .cs-card-sub-title {
+        display: none;
+    }
+
+    .jk-btn-back {
+        /* margin-left: 1em; */
+    }
+
+    .table {
+        width: 100%;
+        overflow: auto;
+        display: block;
+    }
+
+    /* tablet, landscape iPad, lo-res laptops ands desktops */
+    .cs-nav-bar-form-elements {
+        flex-direction: column-reverse;
+    }
+
+    .cs-nav-bar-select {
+        width: 100%;
+    }
+
+    .cs-card-body {
+        margin: 0%;
+    }
+
+    .cs-card1-form {
+        margin-top: 30px;
+    }
+
+    .cs-card-title {
+        /* margin-left: 20px; */
+    }
+
+    .cs-header {
+        font-size: 20px;
+        line-height: 26.13px;
+        font-weight: 600;
+    }
+
+    .cs-header>img {
+        height: 48px;
+    }
+
+    .jk-halfcard {
+        width: 94%;
+        margin: 3%;
+    }
+
+    .jk-bed-card-holder {
+        flex-direction: column;
+    }
+
+    .cs-white-cards {
+        /* margin-left: 10px;
+        margin-right: 10px;
+        width: 95%; */
+    }
+
+    .cs-grey-sub-cards {
+        width: 11em;
+    }
+
+    .cs-card-body {
+        margin: 3%;
+    }
+    .cs-card-title-bed-available{
+        margin-left:10px
+    }
+}
+
+@media (max-width:400px) {
+    .jk-nav-bar {
+        /* flex-wrap: nowrap!important; */
+    }
+
+    .jk-nav-bar>a {
+        margin-right: 0%;
+    }
+
+    .jk-nav-bar>button {
+        padding: .20rem .30rem;
+    }
+
+    .cs-grey-sub-cards {
+        width: 9em;
+    }
+
+    .jk-bed-count-cards {
+        width: 29%;
+    }
 }
