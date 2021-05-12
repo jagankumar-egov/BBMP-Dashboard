@@ -16,10 +16,10 @@
   </head>
 
 <body>
-  <!-- nav bar contents -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light cs-navbar">
+   <!-- nav bar contents -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light cs-navbar">
     <div class="container-fluid">
-      <a class="cs-primary navbar-brand cs-header " href="#">BBMP CHBMS Dashboard</a>
+      <a class="cs-primary navbar-brand cs-header jk-home-link" href="#">BBMP CHBMS Dashboard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,15 +27,6 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <form class="d-flex cs-nav-bar-form">
           <span class="cs-nav-bar-form-elements">
-            <!-- <select class="form-select cs-nav-bar-select" aria-label="Disabled select example" disabled>
-              <option selected>English</option>
-              <option value="1">Hindi</option>
-            </select>
-            <select class="form-select cs-nav-bar-select" aria-label="Default select example">
-              <option selected>Bangalore</option>
-              <option value="1">Chennai</option>
-              <option value="2">Delhi</option>
-            </select> -->
             <div class="col-md-3 cs-nav-bar-select">
               <label for="validationCustom04" class="form-label cs-navbar-label">Language</label>
               <select class="form-select" id="validationCustom04" required>
@@ -63,6 +54,8 @@
     </div>
   </nav>
   <!-- nav bar contents -->
+
+
   <div class="cs-card-body">
 
 
@@ -71,13 +64,10 @@
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs text-center">
           <li class="nav-item ">
-            <a class="nav-link active" aria-current="true" href="#">Queue Status</a>
+            <a class="nav-link active jk-home-link" aria-current="true" href="#">Queue Status</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Bed Availability</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Dashboard 3</a>
+            <a class="nav-link jk-bed-availability" href="#">Bed Availability</a>
           </li>
         </ul>
       </div>
@@ -102,89 +92,66 @@
           <!-- card 2 patient waiting for doctors contents -->
           <div class="cs-white-cards" style="margin-top: 2%;">
             <table class="table">
-              <thead>
-                <tr>
-                  <th scope="col">Hospital</th>
-                  <th scope="col">Hospital Type</th>
-                  <th scope="col">Contact</th>
-                  <th scope="col">Total</th>
-                  <th scope="col">Occupied</th>
-                  <th scope="col">Available</th>
-                  <th scope="col">last updated</th>
+                <thead>
+                    <tr>
 
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <th scope="row">Apollo, bannerghata road</th>
-                  <td>Private</td>
-                  <td>9737373737</td>
-                  <td>100</td>
-                  <td>30</td>
-                  <td class="cs-table-success">70</td>
-                  <td>8 hrs ago</td>
+                        <th scope="col">Queue No.</th>
+                        <th scope="col">BU Number</th>
+                        <th scope="col">SRF Number.</th>
+                        <th scope="col">Added on</th>
 
-                </tr>
-                <tr>
-                  <th scope="row">Fortis, Bannerghata road</th>
-                  <td>Private</td>
-                  <td>9737373737</td>
-                  <td>100</td>
-                  <td>30</td>
-                  <td class="cs-table-success">70</td>
-                  <td>8 hrs ago</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">121</th>
+                        <td>BU****2345</td>
+                        <td>SRF***45</td>
+                        <td>12/04/2021, 11:30 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">121</th>
+                        <td>BU****2345</td>
+                        <td>SRF***45</td>
+                        <td>12/04/2021, 11:30 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">121</th>
+                        <td>BU****2345</td>
+                        <td>SRF***45</td>
+                        <td>12/04/2021, 11:30 PM</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">121</th>
+                        <td>BU****2345</td>
+                        <td>SRF***45</td>
+                        <td>12/04/2021, 11:30 PM</td>
 
-                </tr>
-                <tr>
-                  <th scope="row">Columbia Asia, Sarjapur</th>
-                  <td>Private</td>
-                  <td>9737373737</td>
-                  <td>100</td>
-                  <td>30</td>
-                  <td class="cs-table-success">70</td>
-                  <td>8 hrs ago</td>
-                </tr>
-                <tr>
-                  <th scope="row">Columbia Asia, Sarjapur</th>
-                  <td>Private</td>
-                  <td>9737373737</td>
-                  <td>100</td>
-                  <td>30</td>
-                  <td class="cs-table-success">70</td>
-                  <td>8 hrs ago</td>
-                </tr>
-                <tr>
-                  <th scope="row">Columbia Asia, Sarjapur</th>
-                  <td>Private</td>
-                  <td>9737373737</td>
-                  <td>100</td>
-                  <td>30</td>
-                  <td class="cs-table-success">70</td>
-                  <td>8 hrs ago</td>
-                </tr>
-                <tr>
-                  <th scope="row">Columbia Asia, Sarjapur</th>
-                  <td>Private</td>
-                  <td>9737373737</td>
-                  <td>100</td>
-                  <td>30</td>
-                  <td class="cs-table-success">70</td>
-                  <td>8 hrs ago</td>
-                </tr>
-              </tbody>
-              <tfoot>
-                <tr>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col"></th>
-                  <th scope="col" style="float:right">Rows Per Page: 10 1 - 10 of 200</th>
-                </tr>
-              </tfoot>
+                    </tr>
+                    <tr>
+                        <th scope="row">121</th>
+                        <td>BU****2345</td>
+                        <td>SRF***45</td>
+                        <td>12/04/2021, 11:30 PM</td>
+
+                    </tr>
+                    <tr>
+                        <th scope="row">121</th>
+                        <td>BU****2345</td>
+                        <td>SRF***45</td>
+                        <td>12/04/2021, 11:30 PM</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col"></th>
+                        <th scope="col" style="float:right">Rows Per Page: 10 1 - 10 of 200</th>
+                    </tr>
+                </tfoot>
             </table>
-          </div>
+        </div>
           <!-- card 2 patient waiting for doctors contents -->
 
     </div>

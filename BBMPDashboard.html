@@ -19,7 +19,7 @@
   <!-- nav bar contents -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light cs-navbar">
     <div class="container-fluid">
-      <a class="cs-primary navbar-brand cs-header " href="#">BBMP CHBMS Dashboard</a>
+      <a class="cs-primary navbar-brand cs-header jk-home-link" href="#">BBMP CHBMS Dashboard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,15 +27,6 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <form class="d-flex cs-nav-bar-form">
           <span class="cs-nav-bar-form-elements">
-            <!-- <select class="form-select cs-nav-bar-select" aria-label="Disabled select example" disabled>
-              <option selected>English</option>
-              <option value="1">Hindi</option>
-            </select>
-            <select class="form-select cs-nav-bar-select" aria-label="Default select example">
-              <option selected>Bangalore</option>
-              <option value="1">Chennai</option>
-              <option value="2">Delhi</option>
-            </select> -->
             <div class="col-md-3 cs-nav-bar-select">
               <label for="validationCustom04" class="form-label cs-navbar-label">Language</label>
               <select class="form-select" id="validationCustom04" required>
@@ -63,10 +54,11 @@
     </div>
   </nav>
   <!-- nav bar contents -->
+
   <div class="cs-card-body">
 
-
     <div class="card ">
+
       <!-- router contents -->
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs text-center">
@@ -76,12 +68,9 @@
           <li class="nav-item">
             <a class="nav-link jk-bed-availability" href="#">Bed Availability</a>
           </li>
-
         </ul>
       </div>
       <!-- router contents -->
-
-
 
       <div class="card-body">
         <h4 class="cs-card-title">Patient Queue Status <span class="cs-card-sub-title">last updated : 12/04/2021 12:50
@@ -94,7 +83,16 @@
                 </svg></span>
             <span class="jk-refresh-text cs-primary">Refresh</span></span>
         </h4>
-
+        <div class="alert alert-primary jk-alert-danger" role="alert">
+          <span class="jk-info-icon"> <svg class="MuiSvgIcon-root-603" focusable="false" viewBox="0 0 24 24"
+              aria-hidden="true">
+              <path fill="none" d="M0 0h24v24H0z"></path>
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
+              </path>
+            </svg></span>
+            This is only for patients who are ...
+        </div>
         <!-- card 1 search contents -->
         <div class="cs-white-cards">
           <div class="card-body">

@@ -16,10 +16,10 @@
   </head>
 
 <body>
-  <!-- nav bar contents -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light cs-navbar">
+   <!-- nav bar contents -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light cs-navbar">
     <div class="container-fluid">
-      <a class="cs-primary navbar-brand cs-header " href="#">BBMP CHBMS Dashboard</a>
+      <a class="cs-primary navbar-brand cs-header jk-home-link" href="#">BBMP CHBMS Dashboard</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
         aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -27,15 +27,6 @@
       <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
         <form class="d-flex cs-nav-bar-form">
           <span class="cs-nav-bar-form-elements">
-            <!-- <select class="form-select cs-nav-bar-select" aria-label="Disabled select example" disabled>
-              <option selected>English</option>
-              <option value="1">Hindi</option>
-            </select>
-            <select class="form-select cs-nav-bar-select" aria-label="Default select example">
-              <option selected>Bangalore</option>
-              <option value="1">Chennai</option>
-              <option value="2">Delhi</option>
-            </select> -->
             <div class="col-md-3 cs-nav-bar-select">
               <label for="validationCustom04" class="form-label cs-navbar-label">Language</label>
               <select class="form-select" id="validationCustom04" required>
@@ -63,6 +54,8 @@
     </div>
   </nav>
   <!-- nav bar contents -->
+
+
   <div class="cs-card-body">
 
 
@@ -71,12 +64,11 @@
       <div class="card-header">
         <ul class="nav nav-tabs card-header-tabs text-center">
           <li class="nav-item ">
-            <a class="nav-link active jk-home-link" aria-current="true" href="#">Queue Status</a>
+            <a class="nav-link  jk-home-link" href="#">Queue Status</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/Users/GWL/Desktop/BBMP%20Dashboard/BedAllocationTable.html#">Bed Availability</a>
+              <a class="nav-link active jk-bed-availability" aria-current="true" href="#">Bed Availability</a>
           </li>
-
         </ul>
       </div>
       <!-- router contents -->
@@ -84,7 +76,7 @@
 
 
       <div class="card-body">
-        <h4 class="cs-card-title">Patient Queue Status <span class="cs-card-sub-title">last updated : 12/04/2021 12:50
+        <h4 class="cs-card-title">Bed Availability Status <span class="cs-card-sub-title">last updated : 12/04/2021 12:50
             PM
             <span class="jk-refresh-icon"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24"
                 width="24px" fill="#000000">
@@ -94,224 +86,143 @@
                 </svg></span>
             <span class="jk-refresh-text cs-primary">Refresh</span></span>
         </h4>
-
+<div class="jk-bed-card-holder">
         <!-- card 1 search contents -->
-        <div class="cs-white-cards">
-          <div class="card-body">
-            <h5 class="card-title cs-card1-header">Check your Queue status </h5>
-            <h6 class="card-subtitle cs-card1-helper-text">Search by BU Number or SRF Number along with the last 4 digit
-              of the registered mobile number. Call 1912 incase you are not alloted a BU Number</h6>
-
-            <form class="row g-3 needs-validation cs-card1-form" novalidate style="margin-top: 30px;">
-              <div class="col-md-3">
-                <!-- <label for="validationCustom01" class="form-label">First name</label> -->
-                <input type="text" class="form-control" id="validationCustom01" placeholder="BU Number (eg BU123456)"
-                  required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-3">
-                <!-- <label for="validationCustom02" class="form-label">Last name</label> -->
-                <input type="text" class="form-control" id="validationCustom02" placeholder="SRF Number (eg SRF1234)"
-                  required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-              <div class="col-md-3">
-                <!-- <label for="validationCustom02" class="form-label">Last name</label> -->
-                <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
-                <input type="text" class="form-control" id="validationCustom03"
-                  placeholder="Last 4 digit of registered Mobile Number" required>
-                <div class="valid-feedback">
-                  Looks good!
-                </div>
-              </div>
-
-              <div class="col-md-3">
-                <button class="btn cs-primary-button" type="submit">SEARCH</button>
-              </div>
-            </form>
-
-            <!-- <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a> -->
+        <div class="cs-white-cards jk-halfcard">
+          <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">  
+          <div class="col-md-12 jk-text-align-center"><h4>General Bed</h4></div>  
           </div>
+          <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-total" >
+              <h3 class="jk-bed-count-text-total">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Total</span>
+                </small>
+              </p>
+            </div>
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-occupied" id="cs-doctor-consultation">
+              <h3 class="jk-bed-count-text-occupied">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Occupied</span>
+                </small>
+              </p>
+            </div>
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-vacant" id="cs-doctor-consultation">
+              <h3 class="jk-bed-count-text-vacant">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Vacant</span>
+                </small>
+              </p>
+            </div>
+            </div>
         </div>
         <!-- card 1 search contents -->
-
-        <!-- card 2 patient waiting for doctors contents -->
-        <div class="cs-white-cards" style="margin-top: 2%;">
-          <h5 class="card-title">Patients Waiting For Zonal Doctors Consultation (1st Triage )</h5>
-          <div class="row" id="cs-doctor-consultations-card">
-
-
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-zone-card" id="cs-doctor-consultation">
-              <h6>Zone 1</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Consultation</span>
-                  <span style="display:inline-block;">BU***56 (10 min ago)</span>
-                </small>
-              </p>
-            </div>
+         <!-- card 1 search contents -->
+         <div class="cs-white-cards jk-halfcard">
+          <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">  
+          <div class="col-md-12 jk-text-align-center"><h4>HDU Bed</h4></div>  
           </div>
-
+          <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-total" >
+              <h3 class="jk-bed-count-text-total">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Total</span>
+                </small>
+              </p>
+            </div>
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-occupied" id="cs-doctor-consultation">
+              <h3 class="jk-bed-count-text-occupied">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Occupied</span>
+                </small>
+              </p>
+            </div>
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-vacant" id="cs-doctor-consultation">
+              <h3 class="jk-bed-count-text-vacant">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Vacant</span>
+                </small>
+              </p>
+            </div>
+            </div>
         </div>
-        <!-- card 2 patient waiting for doctors contents -->
-
-
-
-        <!-- card 3 patient waiting contents -->
-        <div class="cs-white-cards" style="margin-top: 2%;">
-          <h5 class="card-title">Patients Waiting For Beds</h5>
-          <div class="alert alert-primary jk-alert-danger" role="alert">
-            <span class="jk-info-icon"> <svg class="MuiSvgIcon-root-603" focusable="false" viewBox="0 0 24 24"
-                aria-hidden="true">
-                <path fill="none" d="M0 0h24v24H0z"></path>
-                <path
-                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
-                </path>
-              </svg></span>
-            If you are in the queue and situation deteriorating, call 1912. Doctors will assess if you need to urgent
-            attention and move you to the critical queue
+        <!-- card 1 search contents -->
+</div>
+<div class="jk-bed-card-holder">
+                <!-- card 1 search contents -->
+                <div class="cs-white-cards jk-halfcard">
+                  <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">  
+                  <div class="col-md-12 jk-text-align-center"><h4>ICU Bed</h4></div>  
+                  </div>
+                  <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">
+                    <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-total" >
+                      <h3 class="jk-bed-count-text-total">2400</h3>
+                      <p>
+                        <small>
+                          <span style="display:inline-block;">Total</span>
+                        </small>
+                      </p>
+                    </div>
+                    <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-occupied" id="cs-doctor-consultation">
+                      <h3 class="jk-bed-count-text-occupied">2400</h3>
+                      <p>
+                        <small>
+                          <span style="display:inline-block;">Occupied</span>
+                        </small>
+                      </p>
+                    </div>
+                    <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-vacant" id="cs-doctor-consultation">
+                      <h3 class="jk-bed-count-text-vacant">2400</h3>
+                      <p>
+                        <small>
+                          <span style="display:inline-block;">Vacant</span>
+                        </small>
+                      </p>
+                    </div>
+                    </div>
+                </div>
+                <!-- card 1 search contents -->
+                        <!-- card 1 search contents -->
+        <div class="cs-white-cards jk-halfcard">
+          <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">  
+          <div class="col-md-12 jk-text-align-center"><h4>ICU Ventilator Bed</h4></div>  
           </div>
-          <div class="row" id="cs-doctor-consultations-card">
+          <div class="row jk-bed-available-row" id="cs-doctor-consultations-card">
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-total" >
+              <h3 class="jk-bed-count-text-total">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Total</span>
+                </small>
+              </p>
+            </div>
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-occupied" id="cs-doctor-consultation">
+              <h3 class="jk-bed-count-text-occupied">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Occupied</span>
+                </small>
+              </p>
+            </div>
+            <div class="col-md-4 jk-bed-count-cards jk-bed-available jk-bed-count-vacant" id="cs-doctor-consultation">
+              <h3 class="jk-bed-count-text-vacant">2400</h3>
+              <p>
+                <small>
+                  <span style="display:inline-block;">Vacant</span>
+                </small>
+              </p>
+            </div>
+            </div>
+        </div>
+        <!-- card 1 search contents -->
 
-
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards jk-bed-card" id="cs-doctor-consultation">
-              <h6>General Bed</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Bed Allocation</span>
-                  <span style="display:inline-block;">BU***56 (1 hr ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards  jk-bed-card" id="cs-doctor-consultation">
-              <h6>ICU Bed</h6>
-              <h3>240</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Bed Allocation</span>
-                  <span style="display:inline-block;">BU***56 (1 hr ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards  jk-bed-card" id="cs-doctor-consultation">
-              <h6>HDU Bed</h6>
-              <h3>120</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Bed Allocation</span>
-                  <span style="display:inline-block;">BU***56 (1 hr ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards  jk-bed-card" id="cs-doctor-consultation">
-              <h6>ICU Ventilator Bed</h6>
-              <h3>120</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Bed Allocation</span>
-                  <span style="display:inline-block;">BU***56 (1 hr ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="col-md-3 col-sm-6 cs-grey-sub-cards  jk-bed-card" id="cs-doctor-consultation">
-              <h6>Critical Queue</h6>
-              <h3>2400</h3>
-              <p>
-                <small>
-                  <span style="color:grey ;display:inline-block;">Last Bed Allocation</span>
-                  <span style="display:inline-block;">BU***56 (1 hr ago)</span>
-                </small>
-              </p>
-            </div>
-            <div class="text-center">
-              <div class="spinner-border" role="status">
-                <span class="visually-hidden">Loading...</span>
               </div>
-            </div>
-          </div>
-
-        </div>
-        <!-- card 3 patient waiting contents -->
-
-
 
       </div>
     </div>
