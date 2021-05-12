@@ -15,8 +15,10 @@ const array = ['jagan', 'bacac'];
           event.preventDefault()
           event.stopPropagation()
         }
-
+        
         form.classList.add('was-validated')
+        mySubmitFunction();
+        return;
       }, false)
     })
 })()
@@ -67,3 +69,15 @@ document.querySelectorAll('.jk-bed-available').forEach(element => element.addEve
   console.log(event);
   window.location.href = 'BBMPBedAvailabilitySelectedBed.html#';
 }));
+
+
+document.getElementById("cs-doctor-consultation")
+
+function mySubmitFunction() {
+  var x = document.getElementById("jk-search-result-element");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}

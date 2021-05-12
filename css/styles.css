@@ -34,7 +34,7 @@ body {
 }
 
 .cs-primary {
-    color: #142FDE !important;
+    color: rgba(20, 47, 222, 1) !important;
 }
 
 .cs-navbar {
@@ -160,10 +160,10 @@ body {
 
 .nav-tabs .nav-item.show .nav-link,
 .nav-tabs .nav-link.active {
-    color: #142FDE;
+    color: rgba(20, 47, 222, 1);
     background-color: #F5F5FA;
     border: none;
-    border-bottom: 1px solid #142FDE;
+    border-bottom: 2px solid rgba(20, 47, 222, 1);
 }
 
 .nav-link {
@@ -212,7 +212,7 @@ body {
 }
 
 .cs-primary-button {
-    background-color: #142FDE;
+    background-color: rgba(20, 47, 222, 1);
     color: #FFFFFF;
     font-weight: 500;
     font-style: normal;
@@ -255,9 +255,31 @@ body {
 }
 
 
+.jk-search-result{
+    display: none;
+    margin-top: 20px;
+}
 
-
-
+.jk-search-response-holder{
+display: flex;
+}
+.jk-search-response-label{
+    margin-left: 2%;
+width: 30%;
+text-align: left;
+line-height: 2em;
+margin-top: 1%;
+}
+.jk-search-response-value{
+    width: 70%;
+    text-align: left;
+    line-height: 2em;
+margin-top: 1%;
+align-self: center;
+}
+.jk-search-result{
+    width: 80%;
+}
 /* 
 .navbar-nav {
     flex-direction: row;
@@ -285,7 +307,7 @@ body {
 
 
 .jk-alert-danger {
-    background-color: #F44336;
+    background-color: rgba(244, 67, 54, 1);
 }
 
 .jk-alert-info {
@@ -305,13 +327,13 @@ body {
 .jk-refresh-icon {
     height: 16px;
 
-    color: #142FDE;
+    color: rgba(20, 47, 222, 1);
     cursor: pointer;
 }
 
 .jk-refresh-icon>svg {
     height: 20px;
-    fill: #142FDE;
+    fill: rgba(20, 47, 222, 1);
 
 }
 
@@ -374,7 +396,7 @@ body {
 
 .jk-bed-count-text-occupied {
 
-    color: #F44336;
+    color: rgba(244, 67, 54, 1);
 
 
 }
@@ -418,7 +440,7 @@ body {
 .jk-bed-current-status-error {
     font-size: 14px;
     line-height: 16.41px;
-    color: #F44336;
+    color: rgba(244, 67, 54, 1);
 
 }
 
@@ -431,7 +453,23 @@ body {
 .jk-dashboard-form{
     margin-top: 15px;
 }
+.jk-font-color-grey{
+    color:grey;
+}
+.alert{
+    border-radius: .76rem;
+}
+.nav .nav-tabs .card-header-tabs .text-center{
+border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+.card-header-tabs{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.12);;
+}
 @media (max-width:991px) {
+    .jk-search-result{
+        width: 97%;
+        height: fit-content;
+    }
     .jk-bed-count-cards{
 height: 7em;
     }
@@ -467,7 +505,7 @@ height: 7em;
     }
 
     .cs-card1-form {
-        margin-top: 30px;
+        margin-top: 40px;
     }
 
     .cs-card-title {
@@ -530,5 +568,10 @@ height: 7em;
 
     .jk-bed-count-cards {
         width: 29%;
+    }
+    .jk-search-result{
+        width: 97%;
+        height: fit-content;
+        align-self: center;
     }
 }
