@@ -16,7 +16,10 @@ body {
     letter-spacing: 0.01071em;
     background-color: #F5F5FA;
 }
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+  color:  rgba(0, 0, 0, 0.87)
 
+}
 .cs-header {
     font: Roboto;
     font-weight: 500;
@@ -390,6 +393,10 @@ body {
     text-align: center;
 }
 
+.jk-text-align-right {
+    text-align: right;
+}
+
 .jk-bed-table-form {
     margin: 0px;
 }
@@ -402,12 +409,42 @@ body {
     padding: 16px 24px 24px 24px;
 }
 
+.jk-bed-current-status-success {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #4CAF50;
+}
 
+.jk-bed-current-status-error {
+    font-size: 14px;
+    line-height: 16.41px;
+    color: #F44336;
 
+}
 
+.jk-table-paginators {
+    float: right;
+}
+.jk-font-bold{
+    font-weight: 600;
+}
+.jk-dashboard-form{
+    margin-top: 15px;
+}
 @media (max-width:991px) {
+    .jk-bed-count-cards{
+height: 7em;
+    }
+    .jk-table-paginators {
+        white-space: nowrap;
+    }
+
     .cs-card-sub-title {
         display: none;
+    }
+
+    .jk-btn-back {
+        /* margin-left: 1em; */
     }
 
     .table {
@@ -434,7 +471,7 @@ body {
     }
 
     .cs-card-title {
-        margin-left: 20px;
+        /* margin-left: 20px; */
     }
 
     .cs-header {
@@ -455,20 +492,43 @@ body {
     .jk-bed-card-holder {
         flex-direction: column;
     }
+
+    .cs-white-cards {
+        /* margin-left: 10px;
+        margin-right: 10px;
+        width: 95%; */
+    }
+
+    .cs-grey-sub-cards {
+        width: 11em;
+    }
+
+    .cs-card-body {
+        margin: 3%;
+    }
+    .cs-card-title-bed-available{
+        margin-left:10px
+    }
 }
 
 @media (max-width:400px) {
-    .jk-nav-bar{
+    .jk-nav-bar {
         /* flex-wrap: nowrap!important; */
     }
-    .jk-nav-bar>a{
+
+    .jk-nav-bar>a {
         margin-right: 0%;
     }
-    .jk-nav-bar>button{
+
+    .jk-nav-bar>button {
         padding: .20rem .30rem;
     }
 
-    .cs-grey-sub-cards{
-        width: 10em;
+    .cs-grey-sub-cards {
+        width: 9em;
+    }
+
+    .jk-bed-count-cards {
+        width: 29%;
     }
 }
