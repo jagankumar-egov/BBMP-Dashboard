@@ -150,7 +150,11 @@ body {
     .cs-card-sub-title {
         display: none;
     }
-
+.table{
+    width: 100%;
+    overflow: auto;
+    display: block;
+}
     /* tablet, landscape iPad, lo-res laptops ands desktops */
     .cs-nav-bar-form-elements {
         flex-direction: column-reverse;
