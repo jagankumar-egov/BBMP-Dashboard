@@ -36,12 +36,12 @@ const array=['jagan','bacac'];
         document.querySelectorAll('.jk-zone-card').forEach(element=>element.addEventListener('click', function (event) {
             // do something
             console.log(event);
-            window.location.href='BedAllocationTable.html#';
+            window.location.href='BBMPDoctorsConsultationQueue.html#';
         }));
         document.querySelectorAll('.jk-bed-card').forEach(element=>element.addEventListener('click', function (event) {
             // do something
             console.log(event);
-            window.location.href="BedAvailablity.html#";
+            window.location.href="BBMPBedAllocationQueue.html#";
         }));
 
     
@@ -56,5 +56,9 @@ const array=['jagan','bacac'];
             window.location.reload();
         }));
         
-
+        document.querySelectorAll('.jk-bed-availability').forEach(element=>element.addEventListener('click', function (event) {
+          // do something
+          console.log(event);
+          window.location.href="BBMPBedAvailablity.html#";
+      }));
         
