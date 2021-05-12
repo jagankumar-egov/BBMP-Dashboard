@@ -238,6 +238,7 @@ background-color: #2196F3;
     color: black;
     margin: 5px 0px 0px 0px;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -286,3 +287,38 @@ background-color: #2196F3;
   .navbar-toggler {
     display: none;
   } */
+
+
+.jk-alert-danger{
+    background-color: #F44336;
+}
+  
+.jk-info-icon{
+    height: 16px;
+ 
+}
+
+.jk-info-icon>svg {
+    height: 20px;
+    fill: white;
+}
+
+.jk-refresh-icon{
+    height: 16px;
+
+    color:  #142FDE;
+    cursor: pointer;
+}
+
+.jk-refresh-icon>svg {
+    height: 20px;
+    fill: #142FDE;
+    
+}
+.jk-refresh-text{
+    cursor: pointer;
+}
+
+.jk-refresh-text:hover{
+    color:  lightblue;
+}

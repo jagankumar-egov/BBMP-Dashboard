@@ -28,7 +28,33 @@ const array=['jagan','bacac'];
 //   }
 //   myFunction()
 
+        document.querySelectorAll('.jk-home-link').forEach(element=>element.addEventListener('click', function (event) {
+            // do something
+            window.location.href='BBMPDashboard.html';
+        }));
 
-const func=()=>{
-    console.log("sasasasasasas")
-}
+        document.querySelectorAll('.jk-zone-card').forEach(element=>element.addEventListener('click', function (event) {
+            // do something
+            console.log(event);
+            window.location.href='BedAllocationTable.html#';
+        }));
+        document.querySelectorAll('.jk-bed-card').forEach(element=>element.addEventListener('click', function (event) {
+            // do something
+            console.log(event);
+            window.location.href="BedAvailablity.html#";
+        }));
+
+    
+        document.querySelectorAll('.jk-refresh-icon').forEach(element=>element.addEventListener('click', function (event) {
+            // do something
+            console.log(event);
+            window.location.reload();
+        }));
+        document.querySelectorAll('.jk-refresh-text').forEach(element=>element.addEventListener('click', function (event) {
+            // do something
+            console.log(event);
+            window.location.reload();
+        }));
+        
+
+        
