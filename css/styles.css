@@ -409,3 +409,12 @@ width: 30%;
 .jk-text-align-center{
     text-align: center;
 }
+.jk-bed-table-form{
+margin: 0px;
+}
+.jk-no-margin{
+margin: 0px;
+}
+.jk-bed-table-padding{
+    padding: 16px 24px 24px 24px;
+}

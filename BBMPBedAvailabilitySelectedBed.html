@@ -73,7 +73,7 @@
       </div>
       <!-- router contents -->
 
-      <a class="btn-group jk-btn-back jk-home-link" role="group" aria-label="...">
+      <a class="btn-group jk-btn-back jk-bed-availability" role="group" aria-label="...">
         <- Back </a> <div class="card-body">
           <h4 class="cs-card-title">Bed Availability - General Bed
             <span class="cs-card-sub-title">last updated : 12/04/2021 12:50
@@ -95,12 +95,43 @@
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z">
                   </path>
                 </svg></span>
-              If you are in the queue and situation deteriorating, call 1912. Doctors will assess if you need to urgent
-              attention and move you to the critical queue
+                Please call 1912 to get on the queue.
             </div>
 
           <!-- card 2 patient waiting for doctors contents -->
-          <div class="cs-white-cards" style="margin-top: 2%;">
+          <div class="cs-white-cards jk-bed-table-padding" style="margin-top: 2%;">
+            <form class="row g-3 needs-validation cs-card1-form jk-bed-table-form" novalidate style="margin-bottom: 10px" >
+              <div class="col-md-3 jk-no-margin">
+                
+              </div>
+              <div class="col-md-3 jk-no-margin">
+                <label for="validationCustom01" class="form-label jk-no-margin">Pincode</label>
+                <input type="text" class="form-control" id="validationCustom01" placeholder="Search"
+                  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-3 jk-no-margin">
+                <label for="validationCustom02" class="form-label jk-no-margin">Hospital Type</label>
+                <input type="text" class="form-control" id="validationCustom02" placeholder="All"
+                  required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+              <div class="col-md-3 jk-no-margin">
+                <label for="validationCustom02" class="form-label jk-no-margin">Hospital</label>
+                <!-- <span class="input-group-text" id="inputGroupPrepend">@</span> -->
+                <input type="text" class="form-control" id="validationCustom03"
+                  placeholder="Search" required>
+                <div class="valid-feedback">
+                  Looks good!
+                </div>
+              </div>
+
+            
+            </form>
             <table class="table">
               <thead>
                 <tr>
